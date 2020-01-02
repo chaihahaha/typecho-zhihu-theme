@@ -21,9 +21,7 @@
 				<li itemprop="interactionCount"><a itemprop="discussionUrl" href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?></a></li>
 			</ul>
             <div id="article<?php echo $i ?>" class="post-content" itemprop="articleBody" onclick="displayNext(this);" style="cursor: pointer;">
-    			<!-- <?php $this->content('- 阅读剩余部分 -'); ?> -->
                         <?php $this->excerpt(200, '...'); ?>
-                        <!-- <p class="more"><a href="<?php $this->permalink() ?>">展开阅读</a></p> -->
                         <p class="more" style="color:#175199;cursor: pointer;">展开阅读</p>
             </div>
             <div id="hiddenarticle<?php echo $i ?>" class="hidden-post-content" itemprop="articleBody-hidden" style="display: none">
@@ -42,4 +40,3 @@
 
 	<?php $this->need('sidebar.php'); ?>
 	<?php $this->need('footer.php'); ?>
-
